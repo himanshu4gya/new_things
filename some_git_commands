@@ -1,0 +1,10 @@
+git add . 
+git commit -m "My first commit"
+git push origin main
+
+
+Command	                                                 Purpose
+git status	                                             See new + modified files
+git ls-files --others --exclude-standard	             See only new, untracked files
+git add .	                                             Stage all changes (new + modified)
+git add $(git ls-files --others --exclude-standard)    	 Add only new, untracked files
